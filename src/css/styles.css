@@ -10,11 +10,30 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  background-image: radial-gradient(gray, 1px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -19px -19px;
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 320px;
+  max-width: 320px; 
   margin-bottom: 16px;
+}
+#search-box:hover,
+#search-box:focus{
+  border-color: #3C5ADC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+.country{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.list-country-options{
+  list-style: none;
+  font-size: 22px;
 }
